@@ -63,9 +63,32 @@ form button{
     color: #FFF;
     font-size: 1.3rem;
 }
+form button:hover{
+    height: 35px;
+    background-color: #2f3966;
+    color: #FFF;
+    font-size: 1.3rem;
+    transition: 0.4s;
+}
 
 .login a{
+    position: relative;
     margin: 1.5rem 0;
     color: #000;
     cursor: pointer;
+}
+
+.login a::after {
+    content: "";
+    position: absolute;
+    background-color: #2f3966;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after{
+  width: 100%;
 }
