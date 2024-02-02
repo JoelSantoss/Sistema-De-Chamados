@@ -1,6 +1,8 @@
 import { AuthContext } from "../../Contexts/auth";
 import { useContext } from "react";
 
+import Header from "../../components/Header";
+
 
 export default function Deashboard(){
 
@@ -12,6 +14,8 @@ export default function Deashboard(){
 
     return(
         <div>
+
+            <Header/>
          <h1> Pagina Deashboard</h1>
          <button onClick={handleLogout} >Sair</button>
         </div>
