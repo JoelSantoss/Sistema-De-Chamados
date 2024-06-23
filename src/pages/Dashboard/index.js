@@ -47,8 +47,32 @@ export default function Deashboard(){
                         <tr>
                             <td data-label="Cliente">Mercado esquina</td>
                             <td data-label="Assunto">Suporte</td>
-                            <td data-label="Status">Em aberto</td>
+                            <td data-label="Status">
+                                <span className="badge" style={{backgroundColor: '#999'}}>
+                                    Em aberto
+                                </span>
+                            </td>
                             <td data-label="Cadastrado">12/05/2024</td>
+                            <td data-label="#">
+                                <button className="action" style={{backgroundColor: '#3583f6'}}>
+                                    <FiSearch color="#FFF" size={17}/>
+                                </button>
+                                <button className="action" style={{backgroundColor: '#f6a935'}}>
+                                    <FiEdit color="#FFF" size={17}/>
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td data-label="Cliente">Infromatica tech</td>
+                            <td data-label="Assunto">Chamado</td>
+                            <td data-label="Status">
+                                <span className="badge" style={{backgroundColor: '#999'}}>
+                                    Em aberto
+                                </span>
+                            </td>
+                            <td data-label="Cadastrado">06/06/2024</td>
                             <td data-label="#">
                                 <button className="action" style={{backgroundColor: '#3583f6'}}>
                                     <FiSearch color="#FFF" size={17}/>
